@@ -52,7 +52,7 @@ header {
     border-bottom: 2px solid #f3e6e8;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header-container {
@@ -103,15 +103,16 @@ nav ul .submenu {
     border-radius: 0 0 12px 12px;
     box-shadow: 0 8px 24px rgba(192, 132, 151, 0.10);
     min-width: 210px;
-    z-index: 10;
+    z-index: 1000;
     flex-direction: column;
     gap: 0;
     padding: 10px 0;
     display: none;
+    margin-top: 2px;
 }
 
-nav ul li:hover > .submenu,
-nav ul li:focus-within > .submenu {
+nav ul li:hover>.submenu,
+nav ul li:focus-within>.submenu {
     display: flex;
 }
 
@@ -139,7 +140,7 @@ nav ul .submenu a:hover {
 #hero {
     background: linear-gradient(120deg, #fbeee6 60%, #f8f8fa 100%);
     text-align: center;
-    padding: 70px 0 60px 0;
+    padding: 90px 0 60px 0;
     border-radius: 0 0 32px 32px;
     margin-bottom: 0;
 }
@@ -383,7 +384,7 @@ footer p {
     margin-bottom: 4px;
 }
 
-.faq-item p {
+faq-item p {
     color: #555;
     font-size: 1rem;
 }
@@ -454,6 +455,7 @@ ul li {
 
 /* Responsywność */
 @media (max-width: 900px) {
+
     .header-container,
     .testimonial-cards,
     .blog-posts {
