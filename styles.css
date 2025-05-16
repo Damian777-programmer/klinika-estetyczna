@@ -506,6 +506,8 @@ ul li {
         top: 56px;
         /* wysokość Twojego headera, dostosuj jeśli masz inną */
         width: 100vw;
+        max-height: 60vh; /* OGRANICZENIE WYSOKOŚCI */
+        overflow-y: auto;  /* PRZEWIJANIE TYLKO W MENU */
         min-width: 0;
         border-radius: 0 0 18px 18px;
         box-shadow: 0 8px 24px rgba(192, 132, 151, 0.13);
@@ -515,8 +517,8 @@ ul li {
         background: #fff;
     }
 
-    nav ul li:hover>.submenu,
-    nav ul li:focus-within>.submenu {
+    nav ul li:hover > .submenu,
+    nav ul li:focus-within > .submenu {
         display: flex;
     }
 
