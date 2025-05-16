@@ -594,3 +594,81 @@ ul li {
         display: block;
     }
 }
+
+@media (max-width: 700px) {
+    /* Główne menu w dwóch wierszach */
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: center;
+    }
+    nav ul li {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+
+    /* Submenu w jednej kolumnie */
+    nav ul .submenu {
+        position: fixed;
+        left: 0;
+        top: 56px; /* wysokość headera, dostosuj jeśli masz inną */
+        width: 100vw;
+        max-width: 100vw;
+        max-height: 60vh;
+        overflow-y: auto;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 8px 24px rgba(192, 132, 151, 0.13);
+        z-index: 4000;
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        background: #fff;
+        gap: 0;
+    }
+    nav ul li:hover > .submenu,
+    nav ul li:focus-within > .submenu {
+        display: flex;
+    }
+    nav ul .submenu li {
+        width: 100%;
+        margin: 0;
+    }
+    nav ul .submenu a {
+        padding: 18px 4px;
+        font-size: 1.1rem;
+        text-align: center;
+        border-radius: 0;
+        border-bottom: 1px solid #f3e6e8;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+    }
+
+    /* Kontener i sekcje */
+    .container {
+        width: 98%;
+        max-width: 100vw;
+        padding: 10px 0;
+        overflow-x: hidden;
+    }
+    section.container {
+        padding: 16px 6px;
+        border-radius: 10px;
+    }
+    #hero {
+        padding: 40px 0 32px 0;
+    }
+    .procedure-cards,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-flex {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .about-img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
