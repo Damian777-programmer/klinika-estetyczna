@@ -511,7 +511,7 @@ ul li {
         min-width: 0;
         border-radius: 0 0 18px 18px;
         box-shadow: 0 8px 24px rgba(192, 132, 151, 0.13);
-        z-index: 2000;
+        z-index: 4000; /* wyższy niż header */
         display: none;
         padding: 16px 0;
         background: #fff;
