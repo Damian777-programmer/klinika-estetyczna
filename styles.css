@@ -493,8 +493,10 @@ ul li {
 /* --- RESPONSYWNOŚĆ DLA TELEFONÓW --- */
 @media (max-width: 900px) {
   .container {
-    width: 98%;
+    width: 100%;
     padding: 10px 0;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   .header-container {
     flex-direction: column;
@@ -535,29 +537,27 @@ ul li {
     margin: 0 auto;
     display: block;
   }
+  /* Najważniejsze poprawki dla galerii, kart, FAQ */
   .procedure-cards,
   .gallery-grid,
   .doctors-cards,
   .testimonial-cards,
-  .blog-posts {
-    grid-template-columns: 1fr !important;
-    flex-direction: column !important;
-    gap: 16px !important;
+  .blog-posts,
+  .faq-list {
+    display: block !important;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
-  .procedure-cards,
-  .gallery-grid {
-    display: grid;
-  }
-  .doctors-cards,
-  .testimonial-cards,
-  .blog-posts {
-    display: flex;
-  }
+  .card,
+  .img-wrap,
   .doctor-card,
   .testimonial,
-  .blog-posts article {
+  .blog-posts article,
+  .faq-item {
     width: 100% !important;
     min-width: 0 !important;
+    box-sizing: border-box;
   }
   section.container,
   section.contact {
