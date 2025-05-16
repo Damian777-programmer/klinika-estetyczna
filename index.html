@@ -255,6 +255,11 @@
     </div>
   </section>
 
+  <!-- Przycisk powrotu na górę -->
+  <button id="scrollToTopBtn" aria-label="Powrót na górę">
+    <span class="lips">💋</span>
+  </button>
+
   <footer>
     <div class="container footer-container">
       <div class="footer-cols">
@@ -285,6 +290,23 @@
   </footer>
 
   <script src="scripts.js"></script>
+  <script>
+    // Pokaż przycisk po przewinięciu 200px w dół
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 200) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+    // Kliknięcie przewija na górę
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    // Ukryj przycisk na starcie
+    scrollBtn.style.display = 'none';
+  </script>
 </body>
 
 </html>
