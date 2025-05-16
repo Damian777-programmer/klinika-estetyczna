@@ -93,7 +93,6 @@ nav ul li {
 }
 
 nav ul .submenu {
-    display: none;
     position: absolute;
     left: 0;
     top: 100%;
@@ -105,10 +104,11 @@ nav ul .submenu {
     flex-direction: column;
     gap: 0;
     padding: 10px 0;
+    display: none;
 }
 
-nav ul li:hover>.submenu,
-nav ul li:focus-within>.submenu {
+nav ul li:hover > .submenu,
+nav ul li:focus-within > .submenu {
     display: flex;
 }
 
