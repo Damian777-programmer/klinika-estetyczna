@@ -100,11 +100,12 @@ nav ul li {
 }
 
 nav ul .submenu {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 56px;
-    width: 100vw;
-    max-width: 100vw;
+    top: 100%;
+    min-width: 210px;
+    width: 260px;      /* lub inna wartość, np. 220px */
+    max-width: 90vw;   /* żeby nie wychodziło poza ekran */
     max-height: 60vh;
     overflow-y: auto;
     border-radius: 0 0 18px 18px;
