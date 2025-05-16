@@ -515,11 +515,17 @@ ul li {
         display: none;
         padding: 16px 0;
         background: #fff;
+
+        /* DODAJ TO: */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        justify-items: stretch;
     }
 
     nav ul li:hover > .submenu,
     nav ul li:focus-within > .submenu {
-        display: flex;
+        display: grid;
     }
 
     nav ul .submenu li {
@@ -527,7 +533,10 @@ ul li {
     }
 
     nav ul .submenu a {
-        padding: 14px 32px;
+        padding: 14px 8px;
         font-size: 1.1rem;
+        text-align: center;
+        border-radius: 0;
+        border-bottom: 1px solid #f3e6e8;
     }
 }
