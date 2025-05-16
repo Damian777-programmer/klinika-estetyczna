@@ -72,7 +72,7 @@ nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 18px; /* <-- dodaj odstęp między kategoriami */
     justify-content: center;
 }
 
