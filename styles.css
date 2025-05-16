@@ -520,8 +520,8 @@ ul li {
         background: #fff;
     }
 
-    nav ul li:hover > .submenu,
-    nav ul li:focus-within > .submenu {
+    nav ul li:hover>.submenu,
+    nav ul li:focus-within>.submenu {
         display: grid;
     }
 
@@ -541,6 +541,7 @@ ul li {
         width: 100%;
         display: block;
     }
+
     /* Usuwa prawą ramkę z ostatniej kolumny */
     nav ul .submenu li:nth-child(2n) a {
         border-right: none;
