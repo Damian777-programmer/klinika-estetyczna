@@ -190,7 +190,7 @@ nav ul .submenu a {
 
 /* Sekcje */
 section {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.7s, transform 0.7s;
@@ -793,7 +793,8 @@ ul li {
     transform: translateY(-36px) scale(1.2) rotate(-10deg);
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
     outline: 2px solid #c08497;
     outline-offset: 2px;
 }

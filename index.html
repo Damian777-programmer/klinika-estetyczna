@@ -130,16 +130,19 @@
         <img src="https://picsum.photos/300/200?random=3" alt="dr Tomasz Wiśniewski">
         <h4>dr Tomasz Wiśniewski</h4>
         <p>Chirurg plastyczny z wieloletnim doświadczeniem w rhinoplastyce i rekonstrukcji nosa.</p>
-    </div>
+      </div>
   </section>
 
   <section id="gallery" class="container gallery">
     <h2>Galeria przed i po</h2>
     <div class="gallery-grid">
-      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3" alt="Przed i po 1"></div>
-      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3" alt="Przed i po 2"></div>
-      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3" alt="Przed i po 3"></div>
-      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3" alt="Przed i po 4"></div>
+      <div class="img-wrap"><img src="https://picsum.photos/300/200?random=3" alt="Przed i po 1"></div>
+      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3"
+          alt="Przed i po 2"></div>
+      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3"
+          alt="Przed i po 3"></div>
+      <div class="https://picsum.photos/300/200?random=3"><img src="https://picsum.photos/300/200?random=3"
+          alt="Przed i po 4"></div>
       <div class="https://picsum.photos/300/200?random=3">
         <img src="https://picsum.photos/300/200?random=2" alt="Galeria 1">
       </div>
@@ -293,7 +296,7 @@
   <script>
     // Pokaż przycisk po przewinięciu 200px w dół
     const scrollBtn = document.getElementById('scrollToTopBtn');
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       if (window.scrollY > 200) {
         scrollBtn.style.display = 'flex';
       } else {
@@ -301,7 +304,7 @@
       }
     });
     // Kliknięcie przewija na górę
-    scrollBtn.addEventListener('click', function() {
+    scrollBtn.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
     // Ukryj przycisk na starcie
