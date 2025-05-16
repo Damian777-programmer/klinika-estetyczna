@@ -454,7 +454,7 @@ ul li {
 }
 
 /* Responsywność */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
     .header-container,
     .testimonial-cards,
@@ -503,7 +503,8 @@ ul li {
     nav ul .submenu {
         position: fixed;
         left: 0;
-        top: 56px; /* wysokość Twojego headera, dostosuj jeśli masz inną */
+        top: 56px;
+        /* wysokość Twojego headera, dostosuj jeśli masz inną */
         width: 100vw;
         min-width: 0;
         border-radius: 0 0 18px 18px;
@@ -513,13 +514,16 @@ ul li {
         padding: 16px 0;
         background: #fff;
     }
-    nav ul li:hover > .submenu,
-    nav ul li:focus-within > .submenu {
+
+    nav ul li:hover>.submenu,
+    nav ul li:focus-within>.submenu {
         display: flex;
     }
+
     nav ul .submenu li {
         width: 100%;
     }
+
     nav ul .submenu a {
         padding: 14px 32px;
         font-size: 1.1rem;
