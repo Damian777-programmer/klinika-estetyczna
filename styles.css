@@ -217,6 +217,15 @@ h3 {
     box-shadow: 0 6px 24px rgba(192, 132, 151, 0.13);
 }
 
+.procedure-cards .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.procedure-cards .card .btn-primary {
+    margin-top: auto;
+}
+
 /* Galeria */
 .gallery-grid {
     display: grid;
