@@ -107,8 +107,8 @@ nav ul .submenu {
     display: none;
 }
 
-nav ul li:hover > .submenu,
-nav ul li:focus-within > .submenu {
+nav ul li:hover>.submenu,
+nav ul li:focus-within>.submenu {
     display: flex;
 }
 
