@@ -307,6 +307,18 @@
     // Ukryj przycisk na starcie
     scrollBtn.style.display = 'none';
   </script>
+  <script>
+    document.querySelectorAll('section').forEach(sec => {
+      const onScroll = () => {
+        if (sec.getBoundingClientRect().top < window.innerHeight - 60) {
+          sec.classList.add('visible');
+          window.removeEventListener('scroll', onScroll);
+        }
+      };
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+    });
+  </script>
 </body>
 
 </html>
